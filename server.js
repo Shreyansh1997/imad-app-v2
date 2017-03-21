@@ -13,12 +13,12 @@ app.get('/Doc1',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'Doc1.html'));
 });
 
-app.get('/Doc2',function(req,res){
-    res.send("Doc2 requested and will be served here");
+app.get('/doc1',function(req,res){
+    res.sendFile(path.join(__dirname, 'ui', 'doc2.html'));
 });
 
-app.get('/Doc3',function(req,res){
-    res.send("Doc3 requested and will be served here");
+app.get('/doc3',function(req,res){
+    res.sendFile(path.join(__dirname, 'ui', 'doc3.html'));
 });
 
 app.get('/ui/style.css',function(req, res){
