@@ -5,11 +5,11 @@ element.innerHTML="Welcome";
 
 //move img
 var img = document.getElementById('madi');
-var marginLeft = 0;
+var Left = 0;
 
 function move() {
-    marginLeft = margintLeft + 10 ;
-    img.style.marginLeft = marginLeft + 'px';
+    marginLeft = Left + 10 ;
+    img.style.marginLeft = Left + 'px';
 }
 img.onclick = function(){
     var interval=setInterval(move, 100);
