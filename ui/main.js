@@ -6,12 +6,12 @@ element.innerHTML="Welcome";
 //move img
 var img=document.getElementById('madi');
 var marginLeft=0;
-img.onclick=function()
+
 function moveright()
 {
     marginLeft=margintleft + '10';
     img.style.margingLeft + 'px';
 }
-{
+img.onclick=function(){
     var interval=setInterval(moveeRight,100);
 };
