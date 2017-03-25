@@ -1,16 +1,9 @@
-console.log('Loaded!');
-//changing element
-var element = document.getElementById('main-text');
-element.innerHTML="Welcome";
+//Counter Code
+var button = document.getElementById('counter');
+var counter = 0;
 
-//move img
-var img = document.getElementById('madi');
-var Left = 0;
-
-function move() {
-    Left = Left + 10 ;
-    img.style.Left = Left + 'px';
-}
-img.onclick = function(){
-    var interval=setInterval(move, 100);
+button.onclick = function() {
+    counter = counter + 1;
+    var span = document.getElementById('count');
+    span.innerHTML = counter.toString();
 };
