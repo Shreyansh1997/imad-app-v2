@@ -5,7 +5,7 @@ element.innerHTML="Welcome";
 
 //move img
 var img = document.getElementById('madi');
-var marginLeft = 0;
+var Left = 0;
 
 function move() {
     Left = Left + 10 ;
